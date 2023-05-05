@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="mainImageView_width">362dp</dimen>
+    <dimen name="mainImageView_height">240dp</dimen>
+    <dimen name="hotel_Image_width">91dp</dimen>
+    <dimen name="hotel_image_height">127dp</dimen>
+    <dimen name="hotel_name_width">160dp</dimen>
+</resources>

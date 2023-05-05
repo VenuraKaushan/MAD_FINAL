@@ -1,0 +1,45 @@
+<resources>
+
+    <string name="app_name">Hotel Manage</string>
+    <!--    <string name="app_name">Delete hotel</string>-->
+    <string-array name="hotels">
+        <item>Kignsbury</item>
+        <item>Galadari</item>
+        <item>Grand Hotel</item>
+        <item>Ramada</item>
+    </string-array>
+
+    <string name="pl_name">Place Name</string>
+    <string name="description">Description</string>
+    <string name="edthtl">Edit Hotel</string>
+    <string name="description1">Description</string>
+    <string name="htlname">Hotel Name</string>
+
+    <!--    package buying-->
+    <string name="fe">Thank you for choosing..</string>
+    <string name="dw">Here is your package details</string>
+    <string name="ds">Selected Package Name: Butterfly Room</string>
+    <string name="fsf">Total Packge Count: 2</string>
+    <string name="fvrv">Total Price: LKR 45,340</string>
+    <string name="kvkb">Confirm</string>
+
+    <!--    add hotel form-->
+    <string name="htlnme">Hotel Name</string>
+    <string name="place_name">Hotel Name</string>
+    <string name="decsrip">Description</string>
+    <string name="amount">Amount</string>
+
+    <!--    admin login-->
+    <string name="email">Email</string>
+    <string name="PW">Password</string>
+
+    <!--    hotelUi-->
+    <string name="WhereToStayTxt">Where to stay..?</string>
+    <string name="hotel1">Galadari</string>
+    <string name="hotel2">grand hotel</string>
+    <string name="hotel3">Ramada</string>
+    <string name="hotel4">Kingsbury</string>
+    <string name="add">ADD</string>
+
+
+</resources>
