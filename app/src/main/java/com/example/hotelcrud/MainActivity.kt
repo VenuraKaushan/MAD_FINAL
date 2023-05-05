@@ -31,9 +31,9 @@ class MainActivity : AppCompatActivity() {
 
         btnInsertData.setOnClickListener {
 
+
             saveHotelData()
-            val intent = Intent(this, HotelUI::class.java)
-            startActivity(intent)
+
         }
 
     }
@@ -45,33 +45,47 @@ class MainActivity : AppCompatActivity() {
         val description = etDescription.text.toString()
         val amount = etAmount.text.toString()
 
+        //check text field is empty
+        var errorCount : Int = 0;
+
         //validation for empty text box
         if (placeName.isEmpty()) {
+            errorCount++
             etPlaceName.error = "Please enter name"
-            return
         }
         if (description.isEmpty()) {
+            errorCount++
             etDescription.error = "Please enter description"
         }
         if (amount.isEmpty()) {
+            errorCount++
             etAmount.error = "Please enter Amount"
         }
 
-        //genrate unique ID
-        val hotelId = dbRef.push().key!!
 
-        val hotel = HotelModel(hotelId, placeName, description, amount)
+        if(errorCount == 0){
+            //generate unique ID
+            val hotelId = dbRef.push().key!!
 
-        dbRef.child(hotelId).setValue(hotel)
-            .addOnCompleteListener{
-                Toast.makeText(this, "Data inserted Success", Toast.LENGTH_SHORT).show()
+            //create object
+            val hotel = HotelModel(hotelId, placeName, description, amount)
 
-                //clear data after insert
-                etPlaceName.text.clear()
-                etDescription.text.clear()
-                etAmount.text.clear()
-            }.addOnFailureListener { err ->
-                Toast.makeText(this,"Error ${err.message}",Toast.LENGTH_SHORT).show()
-            }
+            dbRef.child(hotelId).setValue(hotel)
+                .addOnCompleteListener{
+                    Toast.makeText(this, "Data inserted Success", Toast.LENGTH_SHORT).show()
+
+                    //passed to the next page
+                    val intent = Intent(this, HotelUI::class.java)
+                    startActivity(intent)
+
+                    //clear data after insert
+                    etPlaceName.text.clear()
+                    etDescription.text.clear()
+                    etAmount.text.clear()
+                }.addOnFailureListener { err ->
+                    Toast.makeText(this,"Error ${err.message}",Toast.LENGTH_SHORT).show()
+                }
+        }
+
     }
 }
