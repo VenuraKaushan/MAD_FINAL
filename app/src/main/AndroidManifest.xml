@@ -15,18 +15,11 @@
         <activity
             android:name=".edit_place"
             android:exported="false" />
-        <activity
-            android:name=".NuwaraEliya"
-            android:exported="false" />
+
         <activity
             android:name=".Kandy"
             android:exported="false" />
-        <activity
-            android:name=".Galle"
-            android:exported="false" />
-        <activity
-            android:name=".Anuradhapura"
-            android:exported="false" />
+        
         <activity
             android:name=".Places_home"
             android:exported="false" />
