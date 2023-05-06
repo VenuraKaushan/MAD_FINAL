@@ -5,4 +5,12 @@
     <dimen name="hotel_Image_width">91dp</dimen>
     <dimen name="hotel_image_height">127dp</dimen>
     <dimen name="hotel_name_width">160dp</dimen>
+
+    <dimen name="package1_image_width">97dp</dimen>
+    <dimen name="package1_image_height">88dp</dimen>
+    <dimen name="bookBtn_width">120dp</dimen>
+    <dimen name="bookBtn_height">48dp</dimen>
+
+    <dimen name="adminHome_btn_width">250dp</dimen>
+    <dimen name="adminHome_btn_height">70sp</dimen>
 </resources>

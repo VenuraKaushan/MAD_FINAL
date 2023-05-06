@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/_4e90d11_118b_4a0d_8827_17823fed6014"
+    tools:context=".AdminHome">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="131dp"
+        android:layout_marginEnd="48dp"
+        android:layout_marginBottom="544dp"
+        android:fontFamily="@font/arima_madurai_extrabold"
+        android:text="@string/hello_administrartor"
+        android:textColor="@color/black"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="61dp"
+        android:layout_marginTop="204dp"
+        android:layout_marginEnd="62dp"
+        android:layout_marginBottom="500dp"
+        android:text="@string/chng1"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnHotelManage"
+        android:layout_width="@dimen/adminHome_btn_width"
+        android:layout_height="@dimen/adminHome_btn_height"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="318dp"
+        android:layout_marginEnd="81dp"
+        android:layout_marginBottom="343dp"
+        android:backgroundTint="#79A341"
+        android:text="@string/hotel_management"
+        app:cornerRadius="100sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnPlaceManage"
+        android:layout_width="@dimen/adminHome_btn_width"
+        android:layout_height="@dimen/adminHome_btn_height"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="426dp"
+        android:layout_marginEnd="81dp"
+        android:layout_marginBottom="235dp"
+        android:backgroundTint="#79a341"
+        android:text="@string/place_management"
+        app:cornerRadius="100sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnGuidAndTransportManage"
+        android:layout_width="@dimen/adminHome_btn_width"
+        android:layout_height="@dimen/adminHome_btn_height"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="526dp"
+        android:layout_marginEnd="81dp"
+        android:layout_marginBottom="135dp"
+        android:backgroundTint="#79a341"
+        android:text="@string/btnGuide"
+        app:cornerRadius="100sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
