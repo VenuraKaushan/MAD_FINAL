@@ -14,6 +14,7 @@
     <string name="edthtl">Edit Hotel</string>
     <string name="description1">Description</string>
     <string name="htlname">Hotel Name</string>
+    <string name="btnUplod">Upload</string>
 
     <!--    package buying-->
     <string name="fe">Thank you for choosing..</string>
@@ -54,6 +55,11 @@
     <color name="bgcolor">#4FACF6</color>
     <string name="update">update</string>
     <string name="delete">delete</string>
+    <string name="btnSelect">Select</string>
+    <string name="header">HOTEL</string>
+    <string name="addHotel">Add Hotel</string>
+    <string name="editHotel">Edit Hotel</string>
+    <string name="deleteHotel">Delete Hotel</string>
 
 
 </resources>
