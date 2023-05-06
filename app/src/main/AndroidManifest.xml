@@ -13,6 +13,33 @@
         android:theme="@style/Theme.HotelCRUD"
         tools:targetApi="31">
         <activity
+            android:name=".NuwaraEliya"
+            android:exported="false" />
+        <activity
+            android:name=".Kandy"
+            android:exported="false" />
+        <activity
+            android:name=".Galle"
+            android:exported="false" />
+        <activity
+            android:name=".Anuradhapura"
+            android:exported="false" />
+        <activity
+            android:name=".Places_home"
+            android:exported="false" />
+        <activity
+            android:name=".PlacesCRUD"
+            android:exported="false" />
+        <activity
+            android:name=".edit_hotel"
+            android:exported="false" />
+        <activity
+            android:name=".delete_place"
+            android:exported="false" />
+        <activity
+            android:name=".add_place"
+            android:exported="false" />
+        <activity
             android:name=".HotelUI"
             android:exported="false">
             <meta-data
