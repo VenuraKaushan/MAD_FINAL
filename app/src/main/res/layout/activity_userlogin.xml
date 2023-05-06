@@ -5,10 +5,24 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/unnamed"
-    tools:context=".MainActivity">
+    tools:context=".userlogin">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="137dp"
+        android:layout_height="140dp"
+        android:layout_marginStart="137dp"
+        android:layout_marginTop="154dp"
+        android:layout_marginEnd="137dp"
+        android:layout_marginBottom="437dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/baseline_people_alt_24" />
 
     <EditText
-        android:id="@+id/etPlaceName"
+        android:id="@+id/editTextTextPersonName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="100dp"
@@ -16,9 +30,9 @@
         android:layout_marginEnd="101dp"
         android:layout_marginBottom="364dp"
         android:ems="10"
-        android:hint="@string/email"
         android:inputType="textPersonName"
         android:minHeight="48dp"
+        android:text="@string/email"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -33,9 +47,9 @@
         android:layout_marginEnd="101dp"
         android:layout_marginBottom="302dp"
         android:ems="10"
-        android:hint="@string/PW"
         android:inputType="textPassword"
         android:minHeight="48dp"
+        android:text="@string/PW"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -56,7 +70,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/btnInssertData"
+        android:id="@+id/btnReg"
         android:layout_width="138dp"
         android:layout_height="54dp"
         android:layout_marginStart="136dp"
@@ -85,17 +99,5 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="238dp"
-        android:layout_height="209dp"
-        android:layout_marginStart="86dp"
-        android:layout_marginTop="100dp"
-        android:layout_marginEnd="87dp"
-        android:layout_marginBottom="422dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/baseline_admin_panel_settings_24" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

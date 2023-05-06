@@ -14,4 +14,8 @@
     <color name="bl1">#030F24</color>
     <color name="butt">#D4D5D5</color>
 
+    <!-- sahan -->
+    <color name="log">#D5D6D6</color>
+    <color name="grbtn">#415E41</color>
+
 </resources>
