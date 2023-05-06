@@ -41,5 +41,45 @@
     <string name="hotel4">Kingsbury</string>
     <string name="add">ADD</string>
 
+    <!-- ADD GUIDE -->
+    <string name="app_name_guide">Add Guide</string>
+    <string name="main">Do you want to add any guide?</string>
+    <!--    <string name="email">Email</string>-->
+    <string name="phonenumber">Contact Number</string>
+    <string name="add_guide">add</string>
+
+    <!--    EDIT GUIDE-->
+
+    <string name="app_name_guide1">Edit Guide</string>
+    <string name="edit_guide">Do you want to edit any guide?</string>
+    <!--    <string name="email">Email</string>-->
+    <string name="number">Contact Number</string>
+    <string name="btn">Save changes</string>
+
+    <!--    DELETE GUIDE-->
+    <string name="app_name_guide2">Delete Guide</string>
+    <string name="txt">Do you want to delete any guide?</string>
+    <string name="delete">delete</string>
+    <string name="ee" />
+
+    <!--    VIEW GUIDE-->
+    <string name="app_name_guide3">Guides</string>
+    <string name="guides">GUIDES</string>
+    <string name="aleo">aleo brava</string>
+    <string name="john">john nugget</string>
+    <string name="anne">anne dias</string>
+    <string name="jenny">jenny chrish</string>
+
+    <!--    MANAGE GUIDE-->
+    <string name="app_name_guide4">Manage Guide</string>
+    <string name="GUIDES">GUIDES</string>
+    <string name="add_guide_4">add guide</string>
+    <string name="edit_place">edit place</string>
+    <string name="delete_place">delete place</string>
+    <string name="transport">TRANSPORT</string>
+    <string name="add_transport">add transport</string>
+    <string name="edit_transport">edit transport</string>
+    <string name="delete_transport">delete transport</string>
+
 
 </resources>

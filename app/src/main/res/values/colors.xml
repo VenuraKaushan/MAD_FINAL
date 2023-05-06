@@ -13,5 +13,10 @@
     <color name="h">#0BB3A2</color>
     <color name="bl1">#030F24</color>
     <color name="butt">#D4D5D5</color>
+    <color name="bg1">#b9c5c2</color>
+    <color name="bg2">#909a65</color>
+    <color name="divider_grey">#686868</color>
+
+
 
 </resources>
