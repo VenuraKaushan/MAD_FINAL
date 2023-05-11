@@ -9,8 +9,7 @@ import android.widget.Button
 class AdminAddEditDelete : AppCompatActivity() {
 
     private lateinit var btnInssertData: Button
-    private lateinit var btnEdit: Button
-    private lateinit var btnDelete: Button
+    private lateinit var btnViewHotel: Button
 
 
     @SuppressLint("MissingInflatedId")
@@ -19,9 +18,7 @@ class AdminAddEditDelete : AppCompatActivity() {
         setContentView(R.layout.activity_admin_add_edit_delete)
 
         btnInssertData = findViewById(R.id.btnInssertData)
-        btnEdit = findViewById(R.id.btnEdit)
-        btnDelete = findViewById(R.id.btnDelete)
-
+        btnViewHotel = findViewById(R.id.btnViewHotel)
 
         btnInssertData.setOnClickListener{
 
@@ -30,20 +27,14 @@ class AdminAddEditDelete : AppCompatActivity() {
             startActivity(intent)
         }
 
-        btnEdit.setOnClickListener{
+        btnViewHotel.setOnClickListener{
 
             //passed to the next page
             val intent = Intent(this, EditHotel::class.java)
             startActivity(intent)
         }
 
-        btnDelete.setOnClickListener{
 
-            //passed to the next page
-            val intent = Intent(this, DeleteHotel::class.java)
-            startActivity(intent)
-
-        }
 
 
 

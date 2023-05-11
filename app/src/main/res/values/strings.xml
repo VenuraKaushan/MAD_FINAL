@@ -58,7 +58,7 @@
     <string name="btnSelect">Select</string>
     <string name="header">HOTEL</string>
     <string name="addHotel">Add Hotel</string>
-    <string name="editHotel">Edit Hotel</string>
+    <string name="editHotel">View Hotels</string>
     <string name="deleteHotel">Delete Hotel</string>
 
 
@@ -85,7 +85,7 @@
     <string name="brf">book now</string>
     <string name="gg">PACKAGES</string>
 
-<!--    admin home-->
+    <!--    admin home-->
     <string name="hello_administrartor">Hello Administrator!</string>
     <string name="changes">Do you want do any changes..?</string>
     <string name="chng1">Do you want to do any changes?</string>
@@ -94,4 +94,8 @@
     <string name="guide_transport"><![CDATA[guide &c transport management]]></string>
     <string name="guide_tr"><![CDATA[Guide & transport Management]]></string>
     <string name="btnGuide">GUIDE MANAGEMENT</string>
+    <string name="editHeading">Choose What Hotel You Want to edit?</string>
+    <string name="search">Search By Hotel Name</string>
+    <string name="hotelDetailsHeader">Here the Hotel Details</string>
+
 </resources>

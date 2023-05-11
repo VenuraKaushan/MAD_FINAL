@@ -76,7 +76,7 @@ class AddHotel : AppCompatActivity() {
                     Toast.makeText(this, "Data inserted Success", Toast.LENGTH_SHORT).show()
 
                     //passed to the next page
-                    val intent = Intent(this, AdminAddEditDelete::class.java)
+                    val intent = Intent(this, AddHotel::class.java)
                     startActivity(intent)
 
                     //clear data after insert
