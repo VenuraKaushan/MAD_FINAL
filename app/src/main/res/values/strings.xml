@@ -97,5 +97,6 @@
     <string name="editHeading">Choose What Hotel You Want to edit?</string>
     <string name="search">Search By Hotel Name</string>
     <string name="hotelDetailsHeader">Here the Hotel Details</string>
+    <string name="hotelName">Hotel Name</string>
 
 </resources>
