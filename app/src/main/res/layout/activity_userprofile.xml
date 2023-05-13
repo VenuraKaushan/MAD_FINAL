@@ -59,7 +59,7 @@
         app:srcCompat="@drawable/baseline_person_24" />
 
     <Button
-        android:id="@+id/btnReg"
+        android:id="@+id/btnUpdate"
         android:layout_width="100dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="73dp"
@@ -75,7 +75,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/btnDelete"
         android:layout_width="100dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="245dp"
