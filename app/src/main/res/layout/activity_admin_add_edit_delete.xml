@@ -5,10 +5,10 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/_d01206c_2d95_4fbf_ae48_2976b62aaf51"
-    tools:context=".MainActivity">
+    tools:context=".AdminAddEditDelete">
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/header"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="100dp"
@@ -16,7 +16,7 @@
         android:layout_marginEnd="100dp"
         android:layout_marginBottom="521dp"
         android:fontFamily="@font/arima_madurai_extrabold"
-        android:text="HOTELS"
+        android:text="@string/header"
         android:textColor="@color/design_default_color_on_secondary"
         android:textSize="60sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -28,51 +28,47 @@
         android:id="@+id/btnInssertData"
         android:layout_width="200dp"
         android:layout_height="55dp"
-        android:layout_marginStart="105dp"
         android:layout_marginTop="338dp"
-        android:layout_marginEnd="106dp"
         android:layout_marginBottom="338dp"
         android:backgroundTint="@color/bg"
-        android:text="add hotel"
+        android:text="@string/addHotel"
         android:textColor="@color/black"
         app:cornerRadius="100dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/btnViewHotel"
         android:layout_width="200dp"
         android:layout_height="55dp"
-        android:layout_marginStart="111dp"
-        android:layout_marginTop="450dp"
-        android:layout_marginEnd="100dp"
-        android:layout_marginBottom="226dp"
+        android:layout_marginBottom="172dp"
         android:backgroundTint="@color/bg"
-        android:text="edit hotel"
+        android:text="@string/editHotel"
         android:textColor="@color/black"
         app:cornerRadius="100dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintStart_toStartOf="parent" />
 
-    <Button
-        android:id="@+id/button3"
-        android:layout_width="200dp"
-        android:layout_height="55dp"
-        android:layout_marginStart="111dp"
-        android:layout_marginTop="569dp"
-        android:layout_marginEnd="100dp"
-        android:layout_marginBottom="106dp"
-        android:backgroundTint="@color/bg"
-        android:text="delete hotel"
-        android:textColor="@color/black"
-        app:cornerRadius="100dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <!--    <Button-->
+<!--        android:id="@+id/btnDelete"-->
+<!--        android:layout_width="200dp"-->
+<!--        android:layout_height="55dp"-->
+<!--        android:layout_marginStart="111dp"-->
+<!--        android:layout_marginTop="569dp"-->
+<!--        android:layout_marginEnd="100dp"-->
+<!--        android:layout_marginBottom="106dp"-->
+<!--        android:backgroundTint="@color/bg"-->
+<!--        android:text="@string/deleteHotel"-->
+<!--        android:textColor="@color/black"-->
+<!--        app:cornerRadius="100dp"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent" />-->
 
 </androidx.constraintlayout.widget.ConstraintLayout>

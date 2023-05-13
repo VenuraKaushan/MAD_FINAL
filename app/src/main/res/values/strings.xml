@@ -14,6 +14,7 @@
     <string name="edthtl">Edit Hotel</string>
     <string name="description1">Description</string>
     <string name="htlname">Hotel Name</string>
+    <string name="btnUplod">Upload</string>
 
     <!--    package buying-->
     <string name="fe">Thank you for choosing..</string>
@@ -67,6 +68,48 @@
     <string name="place">Places</string>
     <string name="Transport">Transport</string>
     <string name="todo">TODO</string>
+    <string name="btnSelect">Select</string>
+    <string name="header">HOTEL</string>
+    <string name="addHotel">Add Hotel</string>
+    <string name="editHotel">View Hotels</string>
+    <string name="deleteHotel">Delete Hotel</string>
 
+
+    <!--    package details-->
+    <string name="but">2 nights</string>
+    <string name="d">2                                                                                                                  k</string>
+    <string name="ad">2 adults</string>
+    <string name="ch">4 children</string>
+    <string name="be">3 extra large bed</string>
+    <string name="pr">LKR 34, 172</string>
+    <string name="ni">3 nights</string>
+    <string name="ad1">2 aduts</string>
+    <string name="ber">1 double bed</string>
+    <string name="p">LKR 40,500</string>
+    <string name="pri">LKR 40, 500</string>
+    <string name="a">3 nights</string>
+    <string name="g">2 adults</string>
+    <string name="h">1 large bed</string>
+    <string name="l">LKR 30,375</string>
+    <string name="ge">2 nights</string>
+    <string name="hyh">1 adult</string>
+    <string name="bg">1 single bed</string>
+    <string name="vgh">LKR 8. 700</string>
+    <string name="brf">book now</string>
+    <string name="gg">PACKAGES</string>
+
+    <!--    admin home-->
+    <string name="hello_administrartor">Hello Administrator!</string>
+    <string name="changes">Do you want do any changes..?</string>
+    <string name="chng1">Do you want to do any changes?</string>
+    <string name="hotel_management">Hotel Management</string>
+    <string name="place_management">Place Management</string>
+    <string name="guide_transport"><![CDATA[guide &c transport management]]></string>
+    <string name="guide_tr"><![CDATA[Guide & transport Management]]></string>
+    <string name="btnGuide">GUIDE MANAGEMENT</string>
+    <string name="editHeading">Choose What Hotel You Want to edit?</string>
+    <string name="search">Search By Hotel Name</string>
+    <string name="hotelDetailsHeader">Here the Hotel Details</string>
+    <string name="hotelName">Hotel Name</string>
 
 </resources>
