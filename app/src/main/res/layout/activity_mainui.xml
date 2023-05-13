@@ -45,7 +45,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/btnReg"
+        android:id="@+id/btnHotel"
         android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:backgroundTint="@color/grbtn"
