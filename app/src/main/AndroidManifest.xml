@@ -12,20 +12,29 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.HotelCRUD"
         tools:targetApi="31">
+
         <activity
-            android:name=".mainui"
-            android:exported="true" />
-        <activity
-            android:name=".userlogin"
-            android:exported="true" />
-        <activity
-            android:name=".homeui"
-            android:exported="true">
+            android:name=".SplashScreen"
+            android:exported="true"
+            android:theme="@style/Theme.Design.Light.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity
+            android:name=".mainui"
+            android:exported="false" />
+        <activity
+            android:name=".userlogin"
+            android:exported="false">
+
+        </activity>
+        <activity
+            android:name=".homeui"
+            android:exported="false">
+
         </activity>
         <activity
             android:name=".HotelUI"
@@ -35,37 +44,14 @@
                 android:value="" />
         </activity>
         <activity
-            android:name=".MainActivity"
-            android:exported="false">
-<!--            <intent-filter>-->
-<!--                <action android:name="android.intent.action.MAIN" />-->
-
-<!--                <category android:name="android.intent.category.LAUNCHER" />-->
-<!--            </intent-filter>-->
-
-            <meta-data
-                android:name="android.app.lib_name"
-                android:value="" />
-        </activity>
-
-        <activity
             android:name=".registration"
             android:exported="false">
-<!--            <intent-filter>-->
-<!--                <action android:name="android.intent.action.MAIN" />-->
 
-<!--                <category android:name="android.intent.category.LAUNCHER" />-->
-<!--            </intent-filter>-->
         </activity>
-
         <activity
             android:name=".userprofile"
-            android:exported="false" >
-<!--            <intent-filter>-->
-<!--                <action android:name="android.intent.action.MAIN" />-->
+            android:exported="false">
 
-<!--                <category android:name="android.intent.category.LAUNCHER" />-->
-<!--            </intent-filter>-->
         </activity>
     </application>
 

@@ -22,7 +22,7 @@
         app:srcCompat="@drawable/baseline_people_alt_24" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName"
+        android:id="@+id/Email"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="100dp"
@@ -70,7 +70,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/btnReg"
+        android:id="@+id/btnLog"
         android:layout_width="138dp"
         android:layout_height="54dp"
         android:layout_marginStart="136dp"
