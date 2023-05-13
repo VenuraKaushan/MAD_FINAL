@@ -15,7 +15,7 @@ class mainui : AppCompatActivity() {
         profile = findViewById(R.id.profile)
 
         profile.setOnClickListener{
-            val intent = Intent(this, userprofile::class.java)
+           // val intent = Intent(this, userprofile::class.java)
             startActivity(intent)
         }
 

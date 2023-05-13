@@ -17,7 +17,7 @@ class homeui : AppCompatActivity() {
         signin = findViewById(R.id.signin)
 
         signup.setOnClickListener{
-            val intent = Intent(this, registration::class.java)
+           // val intent = Intent(this, registration::class.java)
             startActivity(intent)
         }
 
