@@ -5,7 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 
-class mainui : AppCompatActivity() {
+class Mainui : AppCompatActivity() {
 
     private lateinit var profile: Button
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -15,7 +15,7 @@ class mainui : AppCompatActivity() {
         profile = findViewById(R.id.profile)
 
         profile.setOnClickListener{
-           // val intent = Intent(this, userprofile::class.java)
+            val intent = Intent(this, Userprofile::class.java)
             startActivity(intent)
         }
 

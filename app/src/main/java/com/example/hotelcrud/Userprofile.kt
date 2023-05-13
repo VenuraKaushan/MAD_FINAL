@@ -4,7 +4,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.recyclerview.widget.RecyclerView
 
-class userprofile : AppCompatActivity() {
+class Userprofile : AppCompatActivity() {
 
     private lateinit var touristRecyclerView  : RecyclerView
 

@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/_1d02d2f_dff3_4857_a243_a65e82812230"
-    tools:context=".mainui">
+    tools:context=".Mainui">
 
     <TextView
         android:id="@+id/textView2"

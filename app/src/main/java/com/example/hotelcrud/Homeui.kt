@@ -1,13 +1,12 @@
 package com.example.hotelcrud
 
-import android.annotation.SuppressLint
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import com.google.android.material.floatingactionbutton.FloatingActionButton
 
-class homeui : AppCompatActivity() {
+class Homeui : AppCompatActivity() {
 
     private lateinit var signup: Button
     private lateinit var signin: Button
@@ -22,12 +21,12 @@ class homeui : AppCompatActivity() {
         adminLogin = findViewById(R.id.adminLoginBtn)
 
         signup.setOnClickListener{
-            val intent = Intent(this, registration::class.java)
+            val intent = Intent(this, Registration::class.java)
             startActivity(intent)
         }
 
         signin.setOnClickListener{
-            val intent = Intent( this,userlogin::class.java )
+            val intent = Intent( this,Userlogin::class.java )
             startActivity(intent)
         }
 

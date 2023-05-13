@@ -3,12 +3,11 @@ package com.example.hotelcrud
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.Button
 import android.widget.Toast
 import com.example.hotelcrud.databinding.ActivityUserloginBinding
 import com.google.firebase.auth.FirebaseAuth
 
-class userlogin : AppCompatActivity() {
+class Userlogin : AppCompatActivity() {
 
     private lateinit var binding: ActivityUserloginBinding
     private lateinit var firebaseAuth: FirebaseAuth
@@ -31,7 +30,7 @@ class userlogin : AppCompatActivity() {
             if (email.isNotEmpty() && password.isNotEmpty()) {
                 firebaseAuth.signInWithEmailAndPassword(email, password).addOnCompleteListener {
                     if (it.isSuccessful) {
-                        val intent = Intent(this, mainui::class.java)
+                        val intent = Intent(this, Mainui::class.java)
                         startActivity(intent)
                     } else {
                         Toast.makeText(this, it.exception.toString(), Toast.LENGTH_SHORT).show()

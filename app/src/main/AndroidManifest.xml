@@ -87,15 +87,15 @@
                 android:value="" />
         </activity>
         <activity
-            android:name=".mainui"
+            android:name=".Mainui"
             android:exported="false" />
         <activity
-            android:name=".userlogin"
+            android:name=".Userlogin"
             android:exported="false">
 
         </activity>
         <activity
-            android:name=".homeui"
+            android:name=".Homeui"
             android:exported="false">
 
         </activity>

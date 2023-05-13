@@ -3,17 +3,13 @@ package com.example.hotelcrud
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.provider.ContactsContract.Data
-import android.widget.Button
-import android.widget.EditText
 import android.widget.Toast
 import com.example.hotelcrud.databinding.ActivityRegistrationBinding
-import com.example.hotelcrud.databinding.ActivityUserloginBinding
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.DatabaseReference
 import com.google.firebase.database.FirebaseDatabase
 
-class registration : AppCompatActivity() {
+class Registration : AppCompatActivity() {
 
     private lateinit var binding: ActivityRegistrationBinding
     private lateinit var firebaseAuth: FirebaseAuth
@@ -57,7 +53,7 @@ class registration : AppCompatActivity() {
                                     Toast.makeText(this,"Something went Wrong!",Toast.LENGTH_SHORT).show()
                                 }
 
-                                    val intent  = Intent(this,homeui::class.java)
+                                    val intent  = Intent(this,Homeui::class.java)
                                     startActivity(intent)
                             }
                             else{
