@@ -21,7 +21,8 @@
         app:layout_constraintHorizontal_bias="0.709"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.78" />
+        app:layout_constraintVertical_bias="0.78"
+        app:passwordToggleEnabled = "true"/>
 
     <TextView
         android:id="@+id/textView7"
@@ -165,8 +166,8 @@
 
     <EditText
         android:id="@+id/Phone"
-        android:layout_width="300dp"
-        android:layout_height="32dp"
+        android:layout_width="340dp"
+        android:layout_height="48dp"
         android:ems="10"
         android:inputType="number"
         android:minHeight="48dp"
@@ -191,7 +192,8 @@
         app:layout_constraintHorizontal_bias="0.709"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.652" />
+        app:layout_constraintVertical_bias="0.652"
+        app:passwordToggleEnabled = "true" />
 
     <CheckBox
         android:id="@+id/checkBox"

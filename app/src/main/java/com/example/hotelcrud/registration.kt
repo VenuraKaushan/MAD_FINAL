@@ -3,85 +3,80 @@ package com.example.hotelcrud
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.provider.ContactsContract.Data
 import android.widget.Button
 import android.widget.EditText
 import android.widget.Toast
+import com.example.hotelcrud.databinding.ActivityRegistrationBinding
+import com.example.hotelcrud.databinding.ActivityUserloginBinding
+import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.DatabaseReference
 import com.google.firebase.database.FirebaseDatabase
 
 class registration : AppCompatActivity() {
 
-    private lateinit var Name: EditText
-    private lateinit var Email: EditText
-    private lateinit var Phone: EditText
-    private lateinit var password: EditText
-    private lateinit var Repassword: EditText
-    private lateinit var btnReg: Button
-
-    private lateinit var dbRef: DatabaseReference
+    private lateinit var binding: ActivityRegistrationBinding
+    private lateinit var firebaseAuth: FirebaseAuth
+    private lateinit var dbRef : DatabaseReference
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_registration)
 
-        Name = findViewById(R.id.Name)
-        Email = findViewById(R.id.Email)
-        Phone = findViewById(R.id.Phone)
-        password = findViewById(R.id.password)
-        Repassword = findViewById(R.id.Repassword)
-        btnReg = findViewById(R.id.btnReg)
+        binding = ActivityRegistrationBinding.inflate(layoutInflater)
 
-        dbRef = FirebaseDatabase.getInstance().getReference("Tourists")
+        setContentView(binding.root)
 
-        btnReg.setOnClickListener {
-            saveTouristsData()
-        }
-    }
-
-    private fun saveTouristsData() {
-        //getting values
-
-        val empName = Name.text.toString()
-        val mail = Email.text.toString()
-        val Num = Phone.text.toString()
-        val pw = password.text.toString()
-        val nPw = Repassword.text.toString()
-
-        if (empName.isEmpty()) {
-            Name.error = "please Enter Tourists Name"
-        }
-
-        if (mail.isEmpty()) {
-            Email.error = "please Enter Tourists Email"
-        }
-
-        if (Num.isEmpty()) {
-            Phone.error = "please Enter Tourists Phone Number"
-        }
-
-        if (pw.isEmpty()) {
-            password.error = "please Enter Tourists Password"
-        }
-
-        if (nPw.isEmpty()) {
-            Repassword.error = "please Enter Tourists New Password"
-        }
-
-        val touristID = dbRef.push().key!!
-
-        val tourist = TouristModel(touristID, empName, mail, Num, pw, nPw)
-
-        dbRef.child(touristID).setValue(tourist)
-            .addOnCompleteListener {
-                Toast.makeText(this, "Data inserted Successfully", Toast.LENGTH_LONG).show()
-
-                //passed to the next page
-                val intent = Intent(this, userprofile::class.java)
-                startActivity(intent)
+        firebaseAuth = FirebaseAuth.getInstance()
 
 
-            }.addOnFailureListener { err ->
-                Toast.makeText(this, "Error ${err.message}", Toast.LENGTH_LONG).show()
+
+        binding.btnReg.setOnClickListener{
+
+            val name = binding.Name.text.toString()
+            val email = binding.Email.text.toString()
+            val phone = binding.Phone.text.toString()
+            val password = binding.password.text.toString()
+            val repassword = binding.Repassword.text.toString()
+
+            if (email.isNotEmpty() && password.isNotEmpty() && repassword.isNotEmpty()){
+                if(password == repassword)
+                {
+                        firebaseAuth.createUserWithEmailAndPassword(email,password).addOnCompleteListener{
+                            if(it.isSuccessful)
+                            {
+
+//                                    store user other detail in the firebase realtime
+                                    val user = TouristModel(it.result.user?.uid.toString(),name,email,phone)
+
+//                                create database refference
+                                dbRef = FirebaseDatabase.getInstance().getReference("user")
+
+                                dbRef.child(it.result.user?.uid.toString()).setValue(user).addOnSuccessListener {
+                                    Toast.makeText(this,"Registered successfully!",Toast.LENGTH_SHORT).show()
+                                }.addOnFailureListener {
+                                    Toast.makeText(this,"Something went Wrong!",Toast.LENGTH_SHORT).show()
+                                }
+
+                                    val intent  = Intent(this,homeui::class.java)
+                                    startActivity(intent)
+                            }
+                            else{
+                                Toast.makeText(this,it.exception.toString(),Toast.LENGTH_SHORT).show()
+                            }
+                        }
+
+                }else{
+                    Toast.makeText(this,"Password is Not Matching",Toast.LENGTH_SHORT).show()
+                }
+
+            }else{
+                Toast.makeText(this,"Empty Fields Are not Allowed!!",Toast.LENGTH_SHORT).show()
             }
+
+        }
+
+
     }
+
+
 }
