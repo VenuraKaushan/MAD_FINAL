@@ -8,5 +8,8 @@ data class TouristModel (
     var Num: String? = null,
     var pw :String? = null,
     var nPw : String? = null
-)
+){
+
+}
+
 
