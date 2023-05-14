@@ -97,24 +97,24 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
-        <!--        <Button-->
-        <!--            android:id="@+id/btnSelect"-->
-        <!--            android:layout_width="67dp"-->
-        <!--            android:layout_height="39dp"-->
-        <!--            android:layout_marginStart="172dp"-->
+                <Button
+                    android:id="@+id/btnSelect"
+                    android:layout_width="67dp"
+                    android:layout_height="39dp"
+                    android:layout_marginStart="172dp"
 
-        <!--            android:layout_marginTop="1dp"-->
-        <!--            android:layout_marginEnd="172dp"-->
-        <!--            android:layout_marginBottom="12dp"-->
-        <!--            android:text="@string/btnSelect"-->
-        <!--            android:textColor="@color/black"-->
-        <!--            android:textSize="8sp"-->
-        <!--            app:backgroundTint="@color/butt"-->
-        <!--            app:layout_constraintBottom_toTopOf="@+id/etPlaceName"-->
-        <!--            app:layout_constraintEnd_toEndOf="parent"-->
-        <!--            app:layout_constraintStart_toStartOf="parent"-->
-        <!--            app:layout_constraintTop_toBottomOf="@+id/uploadedImage"-->
-        <!--            tools:ignore="TouchTargetSizeCheck" />-->
+                    android:layout_marginTop="1dp"
+                    android:layout_marginEnd="172dp"
+                    android:layout_marginBottom="12dp"
+                    android:text="@string/btnSelect"
+                    android:textColor="@color/black"
+                    android:textSize="8sp"
+                    app:backgroundTint="@color/butt"
+                    app:layout_constraintBottom_toTopOf="@+id/etPlaceName"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/uploadedImage"
+                    tools:ignore="TouchTargetSizeCheck" />
 
         <ImageView
             android:id="@+id/uploadedImage"

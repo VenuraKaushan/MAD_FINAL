@@ -17,10 +17,13 @@ class MainActivity : AppCompatActivity() {
     private lateinit var etAmount: EditText
     private lateinit var btnInsertData: Button
 
+    lateinit var binding : MainActivity
+
     private lateinit var dbRef: DatabaseReference
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+
         setContentView(R.layout.activity_add_hotel)
 
         etPlaceName = findViewById(R.id.etPlaceName)
@@ -33,7 +36,7 @@ class MainActivity : AppCompatActivity() {
         btnInsertData.setOnClickListener {
 
 
-            saveHotelData()
+            //saveHotelData()
 
         }
 

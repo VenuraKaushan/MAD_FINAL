@@ -18,9 +18,6 @@ class HotelUI : AppCompatActivity() {
 
     private lateinit var dbRef: DatabaseReference
 
-
-
-    @SuppressLint("MissingInflatedId")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_hotel_ui)
@@ -32,11 +29,11 @@ class HotelUI : AppCompatActivity() {
 //
 //
 //        dbRef = FirebaseDatabase.getInstance().getReference("Hotel")
-
-//        dbRef.child("Hotel").child(hotelId).child("placeName").get().addOnSuccessListener { dataSnapshot ->
-//            val placeName = dataSnapshot.value.toString()
+//
+//        dbRef.child("Hotel").child("hotelId").child("hotelName").get().addOnSuccessListener { dataSnapshot ->
+//            val hotelName = dataSnapshot.value.toString()
 //            // Set the text of your button to the placeName value
-//            btnPlaceName1.text = placeName
+//            btnPlaceName1.text = hotelName
 //        }.addOnFailureListener { exception ->
 //            Toast.makeText(this,"Error ${exception.message}", Toast.LENGTH_SHORT).show()
 //
