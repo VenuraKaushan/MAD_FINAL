@@ -100,16 +100,16 @@ class AddHotel : AppCompatActivity() {
 
     }
 
-//    override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
-//        super.registerForActivityResult(requestCode, resultCode, data)
-//
-//        if(requestCode == 100 && resultCode == RESULT_OK){
-//
-//            ImageUri = data?.data!!
-//            uploadedImage.setImageURI(ImageUri)
-//
-//        }
-//    }
+    override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
+        super.registerForActivityResult(requestCode, resultCode, data)
+
+        if(requestCode == 100 && resultCode == RESULT_OK){
+
+            ImageUri = data?.data!!
+            uploadedImage.setImageURI(ImageUri)
+
+        }
+    }
 
     private val getContent = registerForActivityResult(ActivityResultContracts.StartActivityForResult()) { result ->
         if (result.resultCode == Activity.RESULT_OK) {
